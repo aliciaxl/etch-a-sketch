@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 225, 182);
+}
+
+h2 {
+    margin: 40px;
+    font-family: "Holtwood One SC", serif;
+    font-size: 32px;
+    font-style: oblique;
+    color: rgb(192, 8, 8);
+
+}
+
+button {
+    height: 40px;
+    width: 180px;
+    margin-bottom: 20px;
+    color: rgb(247, 225, 182);
+    font-weight: 600;
+    font-style: italic;
+    background-color: rgb(34, 141, 184);
+    border: none;
+    border-radius: 12px;
+}
+
+#container {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(192, 8, 8);
+}
+
+#rowCells {
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px solid pink; */
+    align-self: stretch;
+}
+
+#columnCells {
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px solid lightblue; */
+    
+
+}
+
+#columnCells:hover {
+    background-color: rgb(92, 203, 121);
+}
+
+#newcells {
+    display: flex;
+    flex-direction: wrap;
+    border: 1px solid pink;
+}
+
+/* rgb(58, 215, 100) */
