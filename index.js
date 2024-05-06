@@ -4,8 +4,7 @@ const columnNum = rowNum;
 
 function random(min, max) {
       return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
+}
 
 let makeGrid = (rowNum) => {
     for (let i = 0; i < rowNum; i++) {
@@ -18,7 +17,7 @@ let makeGrid = (rowNum) => {
             columnCells.className = "columnCells";
             rowCells.appendChild(columnCells);
             columnCells.addEventListener ('mouseover', () => {
-            const randomColor = `rgb(${random(50, 255)}, ${random(50, 255)}, ${random(50, 255)})`
+            const randomColor = `rgb(${random(72, 112)}, ${random(183, 223)}, ${random(101, 141)})`
                 columnCells.style.backgroundColor = randomColor;
             })
       } 
@@ -31,3 +30,13 @@ document.querySelector("#numofSquares").onclick = () => {
     let rowNum = prompt("How many squares per side? (1-100)");
 makeGrid(rowNum);
 };
+
+
+document.querySelector("#clearGrid").onclick = () => {
+    let gridBox = document.querySelectorAll(".columnCells");
+    console.log(gridBox);
+    gridBox.forEach(element => {
+        element.style.backgroundColor = "rgb(247, 225, 182)";
+    })
+};
+

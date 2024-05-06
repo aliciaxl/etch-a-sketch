@@ -10,22 +10,36 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 20px;
     font-family: "Holtwood One SC", serif;
-    font-size: 32px;
+    font-size: 36px;
     font-style: oblique;
     color: rgb(192, 8, 8);
 
 }
 
-button {
+#numofSquares {
     height: 40px;
     width: 180px;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: rgb(247, 225, 182);
     font-weight: 600;
     font-style: italic;
-    background-color: rgb(34, 141, 184);
+    background-color: rgb(39, 154, 199);
+    border: none;
+    border-radius: 12px;
+}
+
+#clearGrid {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(247, 225, 182);
+    font-weight: 600;
+    font-style: italic;
+    background-color: rgb(39, 154, 199);
     border: none;
     border-radius: 12px;
 }
