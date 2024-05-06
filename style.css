@@ -7,6 +7,9 @@ body {
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 40px;
     font-family: "Holtwood One SC", serif;
     font-size: 32px;
@@ -28,31 +31,31 @@ button {
 }
 
 #container {
-    width: 360px;
-    height: 360px;
+    width: 440px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(192, 8, 8);
 }
 
-#rowCells {
+.rowCells {
     display: flex;
     flex-grow: 1;
-    /* border: 1px solid pink; */
+    border: 1px solid pink;
     align-self: stretch;
 }
 
-#columnCells {
+.columnCells {
     display: flex;
     flex-grow: 1;
-    /* border: 1px solid lightblue; */
+    border: 1px solid lightblue;
     
 
 }
 
-#columnCells:hover {
+/* #columnCells:hover {
     background-color: rgb(92, 203, 121);
-}
+} */
 
 #newcells {
     display: flex;
